@@ -100,12 +100,11 @@ Notes:
 
 ## Quick start
 
-1. Enable Corepack and install deps:
+1. Enable Corepack:
    ```bash
    corepack enable && corepack enable pnpm
-   pnpm install
    ```
-2. Run bootstrap to set up the repository environment:
+2. Run bootstrap to build anc configure the repository :
    ```bash
    pnpm bootstrap
    ```
