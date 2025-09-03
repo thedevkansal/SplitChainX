@@ -100,16 +100,22 @@ Notes:
 
 ## Quick start
 
-1. Enable Corepack and install deps:
+It is recommended to use Corepack to ensure pnpm is used for the repository's package management. If you use a different package manager, you may experience problematic behavior.
+
+1. Verify your version of corepack and ensure you are on > 0.31.0
+   ```bash
+   corepack -v
+   npm install -g corepack@latest
+   ```
+2. Enable Corepack:
    ```bash
    corepack enable && corepack enable pnpm
-   pnpm install
    ```
-2. Run bootstrap to set up the repository environment:
+3. Run bootstrap to build and configure the repository :
    ```bash
    pnpm bootstrap
    ```
-3. Run the example end-to-end test flow:
+4. Run the example end-to-end test flow:
    ```bash
    pnpm test-e2e
    ```
