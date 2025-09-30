@@ -13,7 +13,7 @@
     "module": "nodenext",
     "esModuleInterop": true
   },
-  "include": ["src/**/*.ts", "src/generated/vincent-policy-metadata.json"],
+  "include": ["src/**/*.ts", "src/**/*.json"],
   "references": [],
   "exclude": ["jest.config.ts", "src/**/*.spec.ts", "src/**/*.test.ts"]
 }
