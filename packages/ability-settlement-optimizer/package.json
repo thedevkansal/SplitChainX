@@ -1,0 +1,26 @@
+{
+  "name": "@lit-protocol/ability-settlement-optimizer",
+  "version": "1.0.0",
+  "description": "Smart settlement optimizer for SplitChainX",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "action:build": "pnpm node ./scripts/bundle-vincent-ability/esbuild.js",
+    "build": "tsc && pnpm run action:build",
+    "action:deploy": "pnpm node ./scripts/deploy-lit-action.js"
+  },
+  "keywords": [
+    "vincent",
+    "defi",
+    "settlement",
+    "splitwise"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "@lit-protocol/vincent-ability-sdk": "*",
+    "@lit-protocol/vincent-scaffold-sdk": "*"
+  },
+  "devDependencies": {
+    "typescript": "*"
+  }
+}
