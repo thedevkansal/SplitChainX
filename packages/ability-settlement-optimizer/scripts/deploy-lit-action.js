@@ -2,6 +2,9 @@ const fs = require('fs');
 const path = require('path');
 const { of: ipfsOnlyHashOf } = require('ipfs-only-hash');
 
+// Load environment variables from root .env file
+require('dotenv').config({ path: path.join(__dirname, '../../../.env') });
+
 // Get Pinata JWT from environment variable
 const PINATA_JWT = process.env.PINATA_JWT;
 if (!PINATA_JWT) {

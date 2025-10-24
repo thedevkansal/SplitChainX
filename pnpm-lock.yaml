@@ -82,6 +82,9 @@ importers:
       cli-table3:
         specifier: 0.6.5
         version: 0.6.5
+      dotenv:
+        specifier: ^17.2.3
+        version: 17.2.3
       esbuild:
         specifier: 0.19.2
         version: 0.19.2
@@ -176,6 +179,19 @@ importers:
       ipfs-only-hash:
         specifier: 4.0.0
         version: 4.0.0
+
+  packages/ability-settlement-optimizer:
+    dependencies:
+      '@lit-protocol/vincent-ability-sdk':
+        specifier: '*'
+        version: 2.0.0(bufferutil@4.0.9)(utf-8-validate@5.0.10)
+      '@lit-protocol/vincent-scaffold-sdk':
+        specifier: '*'
+        version: 2.0.0(@lit-protocol/vincent-ability-sdk@2.0.0(bufferutil@4.0.9)(utf-8-validate@5.0.10))(@types/node@20.19.11)(bufferutil@4.0.9)(typescript@5.8.3)(utf-8-validate@5.0.10)(zod@3.25.76)
+    devDependencies:
+      typescript:
+        specifier: 5.8.3
+        version: 5.8.3
 
   packages/policy-counter:
     dependencies:
@@ -2791,6 +2807,7 @@ packages:
 
   '@walletconnect/universal-provider@2.9.2':
     resolution: {integrity: sha512-JmaolkO8D31UdRaQCHwlr8uIFUI5BYhBzqYFt54Mc6gbIa1tijGOmdyr6YhhFO70LPmS6gHIjljwOuEllmlrxw==}
+    deprecated: 'Reliability and performance improvements. See: https://github.com/WalletConnect/walletconnect-monorepo/releases'
 
   '@walletconnect/utils@2.9.2':
     resolution: {integrity: sha512-D44hwXET/8JhhIjqljY6qxSu7xXnlPrf63UN/Qfl98vDjWlYVcDl2+JIQRxD9GPastw0S8XZXdRq59XDXLuZBg==}
@@ -3482,6 +3499,10 @@ packages:
 
   dotenv@16.4.7:
     resolution: {integrity: sha512-47qPchRCykZC03FhkYAhrvwU4xDBFIj1QPqaarj6mdM/hgUzfPHcpkHJOn3mJAufFeeAxAzeGsr5X0M4k6fLZQ==}
+    engines: {node: '>=12'}
+
+  dotenv@17.2.3:
+    resolution: {integrity: sha512-JVUnt+DUIzu87TABbhPmNfVdBDt18BLOWjMUFJMSi/Qqg7NTYtabbvSNJGOJ7afbRuv9D/lngizHtP7QyLQ+9w==}
     engines: {node: '>=12'}
 
   dset@3.1.4:
@@ -10862,6 +10883,8 @@ snapshots:
       dotenv: 16.4.7
 
   dotenv@16.4.7: {}
+
+  dotenv@17.2.3: {}
 
   dset@3.1.4: {}
 
