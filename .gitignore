@@ -1,56 +1,36 @@
-# See http://help.github.com/ignore-files/ for more about ignoring files.
+# Dependencies
+node_modules/
+.pnpm-store/
 
-# compiled output
-dist
-tmp
-out-tsc
+# Build outputs
+dist/
+build/
+.nx/
 
-# dependencies
-node_modules
+# Environment variables (IMPORTANT!)
+.env
+.env.local
+.env.*.local
 
-# IDEs and editors
-.project
-.classpath
-.c9/
-*.launch
-.settings/
-*.sublime-workspace
+# Test coverage
+coverage/
 
-# IDE - VSCode and its forks
-.vscode/*
-!.vscode/settings.json
-!.vscode/tasks.json
-!.vscode/launch.json
-!.vscode/extensions.json
-.cursor/
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
 
-# misc
-/.sass-cache
-/connect.lock
-coverage
-/libpeerconnection.log
-npm-debug.log
-yarn-error.log
-testem.log
-/typings
-
-# System Files
+# OS
 .DS_Store
 Thumbs.db
 
-.nx/cache
-.nx/workspace-data
+# Logs
+*.log
+npm-debug.log*
+pnpm-debug.log*
 
-screenshots
-.env.backup
-**/.next
-**/next-env.d.ts
-
-# Environment variables
-**/.env*
-!**/.env*example*
-
-.github/instructions/nx.instructions.md
-
-*.tsbuildinfo
-.ts-trace
+# Generated files
+packages/*/dist/
+packages/*/src/generated/
+packages/test-e2e/.env.test-e2e
